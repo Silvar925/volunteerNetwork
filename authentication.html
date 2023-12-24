@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/adaptive.css">
+
+
+    <title>Аутенфикация</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">НОВОСТИ</a></li>
+                <li><a href="#">МЕРОПРИЯТИЯ</a></li>
+                <li><a href="#">РЕЙТИНГ</a></li>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="#">ДОКУМЕНТЫ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="authentication-box">
+        <div class="authentication-box_container" id="containerAuthorization" style="display: none;">
+            <div class="authentication-box_container_title">
+                <img src="/images/logo.svg" alt="#">
+
+                <div class="authentication-box_container_title_right">
+                    <p>Еще не зарегестрированы?</p>
+                    <a href="#" id="btnRegistration">Регистрация</a>
+                </div>
+            </div>
+
+            <div class="authentication-box_container_input_div">
+                <h2>Вход</h2>
+
+                <div class="authentication-box_container_input">
+                    <div class="authentication-box_container_input_login">
+                        <p>Электронная почта</p>
+                        <input type="text" placeholder="email@example.com">
+                    </div>
+
+                    <div class="authentication-box_container_input_password">
+                        <div class="authentication-box_container_input_password_title">
+                            <p>Пароль</p>
+                            <a href="#">Забыли пароль</a>
+                        </div>
+                        <input type="text" placeholder="Введите пароль">
+                    </div>
+                </div>
+            </div>
+
+            <div class="authentication-box_container_checkBox">
+                <input type="checkbox" id="myCheckbox" name="myCheckbox">
+                <label for="myCheckbox">Выберите меня:</label>
+            </div>
+
+            <div class="authentication-box_container_buttons">
+                <a href="#">Войти</a>
+            </div>
+        </div>
+
+        <div class="authentication-box_container_reg" id="containerRegistration">
+            <div class="authentication-box_container_title">
+                <img src="/images/logo.svg" alt="#">
+
+                <div class="authentication-box_container_title_right">
+                    <p>Еще не зарегестрированы?</p>
+                    <a href="#" id="btnRegistration">Регистрация</a>
+                </div>
+            </div>
+
+            <div class="authentication-box_container_input_div">
+                <h2>Вход</h2>
+
+                <div class="authentication-box_container_input">
+                    <div class="authentication-box_container_input_login">
+                        <p>Электронная </p>
+                        <input type="text" placeholder="email@example.com">
+                    </div>
+
+                    <div class="authentication-box_container_input_password">
+                        <div class="authentication-box_container_input_password_title">
+                            <p>Пароль</p>
+                            <a href="#">Забыли пароль</a>
+                        </div>
+                        <input type="text" placeholder="Введите пароль">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer_about-us footer_child">
+            <div class="footer_child_title">
+                <h1>О НАС</h1>
+                <hr>
+            </div>
+
+            <div class="footer_about-us_p">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                </p>
+            </div>
+        </div>
+
+        <div class="footer_navigation footer_child">
+            <div class="footer_navigation_title">
+                <h1>Навигация</h1>
+                <hr>
+            </div>
+
+            <ul>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Рейтинг</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Документы</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer_feedback footer_child">
+            <div class="footer_child_title">
+                <h1>Обратная свзяь</h1>
+                <hr>
+            </div>
+
+            <div class="footer_feedback_list">
+                <div class="footer_socialNetwork">
+                    <img src="#" alt="Telegram">
+                    <img src="#" alt="VK">
+                    <img src="#" alt="WhatsApp">
+                </div>
+
+                <ul>
+                    <p>8 (800) 333-77-37</p>
+                    <p>my_carier@gmail.com</p>
+                    <p>support_carier@gmail.com</p>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+    <script>
+        const btnRegistration = document.getElementById('btnRegistration')
+        const containerRegistration = document.getElementById('containerRegistration')
+        const containerAuthorization = document.getElementById('containerAuthorization')
+
+        btnRegistration.addEventListener('click', function () {
+            console.log("Обработка нажатия");
+
+            const registrationDisplayStyle = getComputedStyle(containerRegistration).display;
+
+            if (registrationDisplayStyle === "none") {
+                containerRegistration.style.display = "flex";
+                containerAuthorization.style.display = "none";
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
