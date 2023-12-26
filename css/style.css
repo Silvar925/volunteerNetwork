@@ -27,6 +27,7 @@ header nav ul li a {
     justify-content: center;
     align-items: center;
     background-color: #F2EFF6;
+    height: 1200px;
 }
 
 .authentication-box_container {
@@ -93,9 +94,32 @@ header nav ul li a {
 }
 
 .authentication-box_container_checkBox {
-    display: flex;
     gap: 16px;
+    display: flex;
+    align-items: center;
     font-family: 'Montserrat';
+}
+
+.btnReg {
+    margin-top: 32px;
+    margin-bottom: 46px;
+}
+
+.authentication-box_container_checkBox input {
+    border-radius: 5px;
+    border: 1px solid #8A8EA3;
+    background: #D9D9D9;
+    width: 25px;
+    height: 23px;
+}
+
+.authentication-box_container_checkBox_label {
+    display: flex;
+    max-width: 515px;
+}
+
+.checkboxReg {
+    margin-top: 72px;
 }
 
 .authentication-box_container_buttons {
@@ -135,13 +159,38 @@ header nav ul li a {
 }
 
 .authentication-box_container_reg {
-    display: flex;
+    display: none;
     gap: 32px;
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
     padding: 24px 53px;
     margin: 32px 347px;
+    max-width: 673px;
+}
+
+.authentication-box_container_input_div_hints {
+    display: flex;
+    gap: 45px;
+    margin-top: 32px;
+    max-width: 600px;
+}
+
+.authentication-box_container_input_div_hints ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.authentication-box_container_input_div_hints ul p {
+    color: #8A8EA3;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.rulesAgreement {
+    display: flex;
 }
 
 footer {

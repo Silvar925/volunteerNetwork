@@ -1,10 +1,17 @@
 @media (min-width: 320px) and (max-width: 425px) {
+    header {
+        display: none;
+    }
 
     footer {
         display: none;
     }
 
     .authentication-box {
+        display: flex;
+    }
+
+    .authentication-box_container_title_right {
         display: none;
     }
 }

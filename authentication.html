@@ -27,7 +27,7 @@
     </header>
 
     <section class="authentication-box">
-        <div class="authentication-box_container" id="containerAuthorization" style="display: none;">
+        <div class="authentication-box_container" id="containerAuthorization">
             <div class="authentication-box_container_title">
                 <img src="/images/logo.svg" alt="#">
 
@@ -72,28 +72,57 @@
 
                 <div class="authentication-box_container_title_right">
                     <p>Еще не зарегестрированы?</p>
-                    <a href="#" id="btnRegistration">Регистрация</a>
+                    <a href="#" id="btnAuthorization">Войти</a>
                 </div>
             </div>
 
             <div class="authentication-box_container_input_div">
-                <h2>Вход</h2>
+                <h2>Регистрация</h2>
 
                 <div class="authentication-box_container_input">
                     <div class="authentication-box_container_input_login">
-                        <p>Электронная </p>
-                        <input type="text" placeholder="email@example.com">
+                        <p>* ФИО</p>
+                        <input type="text" placeholder="Введите ваше ФИО">
                     </div>
 
-                    <div class="authentication-box_container_input_password">
-                        <div class="authentication-box_container_input_password_title">
-                            <p>Пароль</p>
-                            <a href="#">Забыли пароль</a>
-                        </div>
-                        <input type="text" placeholder="Введите пароль">
+                    <div class="authentication-box_container_input_login">
+                        <p>* Электронная почта</p>
+                        <input type="text" placeholder="Введите ваш Email">
+                    </div>
+
+                    <div class="authentication-box_container_input_login">
+                        <p>* Пароль</p>
+                        <input type="text" placeholder="">
                     </div>
                 </div>
+
+                <div class="authentication-box_container_input_div_hints">
+                    <ul class="authentication-box_container_input_div_hints_left">
+                        <p>--Минимум 6 символов</p>
+                        <p>--Содержит особые символы</p>
+                    </ul>
+
+                    <ul class="authentication-box_container_input_div_hints_right">
+                        <p>--Содержит цифры</p>
+                        <p>--Содержит заглавные и строчные буквы</p>
+                    </ul>
+                </div>
+
+                <div class="authentication-box_container_checkBox checkboxReg">
+                    <input type="checkbox" id="myCheckbox" name="myCheckbox">
+
+                    <div class="authentication-box_container_checkBox_label">
+                        <label for="myCheckbox">Я соглашаюсь с условиями Политики конфиденциальности и Правилами
+                            пользования </label>
+                    </div>
+                </div>
+
+                <div class="authentication-box_container_buttons btnReg">
+                    <a href="#">Регистрация</a>
+                </div>
+
             </div>
+
         </div>
 
     </section>
@@ -161,21 +190,27 @@
     </footer>
 
     <script>
-        const btnRegistration = document.getElementById('btnRegistration')
-        const containerRegistration = document.getElementById('containerRegistration')
-        const containerAuthorization = document.getElementById('containerAuthorization')
+        function showContainer(show, hide) {
+            const showDisplayStyle = getComputedStyle(show).display;
+
+            if (showDisplayStyle === "none") {
+                show.style.display = "flex";
+                hide.style.display = "none";
+            }
+        }
+
+        const btnRegistration = document.getElementById('btnRegistration');
+        const btnAuthorization = document.getElementById('btnAuthorization');
+        const containerRegistration = document.getElementById('containerRegistration');
+        const containerAuthorization = document.getElementById('containerAuthorization');
 
         btnRegistration.addEventListener('click', function () {
-            console.log("Обработка нажатия");
-
-            const registrationDisplayStyle = getComputedStyle(containerRegistration).display;
-
-            if (registrationDisplayStyle === "none") {
-                containerRegistration.style.display = "flex";
-                containerAuthorization.style.display = "none";
-            }
+            showContainer(containerRegistration, containerAuthorization);
         });
 
+        btnAuthorization.addEventListener('click', function () {
+            showContainer(containerAuthorization, containerRegistration);
+        });
 
     </script>
 
