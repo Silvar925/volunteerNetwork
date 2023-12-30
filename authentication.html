@@ -16,6 +16,9 @@
 <body>
     <header>
         <nav>
+
+            <img src="/images/logo.svg" alt="#">
+
             <ul>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Мероприятия</a></li>
@@ -23,11 +26,15 @@
                 <li><a href="#">О нас</a></li>
                 <li><a href="#">Документы</a></li>
             </ul>
+
+            <a href="profile.html"><img src="/images/profile.svg" alt="#" id="btnProfile"></a>
+
         </nav>
+
     </header>
 
     <section class="container_authentication">
-        <div class="container_authentication_authorization white_container_authentication">
+        <div class="container_authentication_authorization white_container_authentication" id="authorization_box">
             <div class="container_authentication_title">
                 <div class="container_authentication_title_left">
                     <img src="/images/logo.svg" alt="logo">
@@ -35,7 +42,7 @@
 
                 <div class="container_authentication_title_right">
                     <p>Еще не зарегестрированы ?</p>
-                    <a href="#">Регистрация</a>
+                    <a href="#" id = "btnRegistration">Регистрация</a>
                 </div>
             </div>
 
@@ -66,7 +73,7 @@
             </div>
         </div>
 
-        <div class="container_authentication_authorization white_container_authentication">
+        <div class="container_authentication_registration white_container_authentication hidden" id="registration_box">
             <div class="container_authentication_title">
                 <div class="container_authentication_title_left">
                     <img src="/images/logo.svg" alt="logo">
@@ -74,12 +81,12 @@
 
                 <div class="container_authentication_title_right">
                     <p>Уже зарегистрированы?</p>
-                    <a href="#">Войти</a>
+                    <a href="#" id = "btnAuthorization">Войти</a>
                 </div>
             </div>
 
             <div class="container_authentication_title_h1">
-                <h1>Вход</h1>
+                <h1>Регистрация</h1>
             </div>
 
             <div class="container_authentication_dateEntry">
@@ -184,7 +191,23 @@
     </footer>
 
     <script>
-        console.log('Supernatural')
+        const registrationBox = document.getElementById('registration_box')
+        const authorizationBox = document.getElementById('authorization_box')
+
+        const btnRegistration = document.getElementById('btnRegistration')
+        const btnAuthorization = document.getElementById('btnAuthorization')
+
+        btnRegistration.addEventListener('click', function() {
+            authorizationBox.classList.add("hidden")
+            registrationBox.classList.remove("hidden")
+        })
+
+        btnAuthorization.addEventListener('click', function() {
+            authorizationBox.classList.remove("hidden")
+            registrationBox.classList.add("hidden")
+        })
+
+
     </script>
 
 </body>

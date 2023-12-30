@@ -1,32 +1,7 @@
-header nav ul {
-    display: flex;
-    gap: 55px;
-    justify-content: center;
-    align-items: center;
-    height: 72px;
-    background-color: white;
-}
-
-header nav ul li a {
-    color: black;
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-header nav ul li a:hover {
-    border-bottom: 2px solid #2EA2D6;
-}
-
 .container_authentication {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 36px;
-    margin-bottom: 48px;
 }
 
 .white_container_authentication {
@@ -34,9 +9,7 @@ header nav ul li a:hover {
     width: 673px;
     padding: 24px 54px 46px;
     border-radius: 10px;
-}
 
-.container_authentication_authorization {
     display: flex;
     flex-direction: column;
     align-items: center;
