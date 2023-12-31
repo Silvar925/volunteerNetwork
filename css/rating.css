@@ -68,3 +68,34 @@
     font-weight: 700;
     line-height: normal;
 }
+
+table thead {
+    background-color: #EEF0F4;
+}
+
+.number {
+    width: 58px;
+}
+
+.fullname {
+    width: 194px;
+}
+
+.events {
+    width: 160px;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+}
+
+table thead tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+table tbody tr {
+    display: flex;
+    justify-content: space-between;
+}
