@@ -20,9 +20,9 @@
             <img src="/images/logo.svg" alt="#">
 
             <ul>
-                <li><a href="#">Новости</a></li>
+                <li><a href="index.html">Новости</a></li>
                 <li><a href="#">Мероприятия</a></li>
-                <li><a href="#">Рейтинг</a></li>
+                <li><a href="rating.html">Рейтинг</a></li>
                 <li><a href="#">О нас</a></li>
                 <li><a href="#">Документы</a></li>
             </ul>
@@ -58,12 +58,12 @@
                 </ul>
             </div>
 
-            <a href="#" id="btnEditingProfile">Редактировать профиль</a>
+            <a href="#" id="btnEditingProfile" class="greenButton">Редактировать профиль</a>
 
         </div>
 
         <div class="container_profile_right">
-            <div class="container_profile_info" id="profileInfo_box">
+            <div class="container_profile_info hidden" id="profileInfo_box">
                 <div class="container_profile_info_personal_data">
                     <h1>Чомаева Мадина Халисовна</h1>
     
@@ -338,7 +338,44 @@
                 </div>
             </div>
 
-            <div class="container_profile_editingProfile hidden" id="eitingProfile_box">
+            <div class="container_profile_editingProfile" id="eitingProfile_box">
+                <h1>Редактирование профиля</h1>
+
+                <div class="editingInput">
+                    <p>Электронная почта</p>
+                    <input type="text" placeholder="Введите ваш  E-mail">
+                </div>
+
+                <div class="editingInput">
+                    <p>Возраст</p>
+                    <input type="text" placeholder="Введите ваш  E-mail">
+                </div>
+
+                <div class="editingInput">
+                    <p>Образование</p>
+                    <select name="" id="">
+                        <option value="1">Выберите свое образовательное учреждение</option>
+                        <option value="1">Северо-Кавказская Государственная Академия</option>
+                    </select>
+                </div>
+
+                <div class="editingInput">
+                    <p>Специальность</p>
+                    <select name="" id="">
+                        <option value="1">Выберите свою специальность</option>
+                        <option value="1">Программная-инеженерия</option>
+                    </select>
+                </div>
+
+                <div class="editingInput">
+                    <p>Выберите свою специальность</p>
+                    <textarea name="" id="" cols="30" rows="10">Расскажите вкратце о себе</textarea>
+                    <p class="">244 из 1200 символов (минимум 200)</p>
+                </div>
+
+                <div class="btnSave">
+                    <a href="#" id="btnSave" class="greenButton">Сохранить</a>
+                </div>
 
             </div>
 
