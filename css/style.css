@@ -281,6 +281,46 @@ footer {
     background-color: #98BB87;
 }
 
+.lightBlueButton {
+    display: flex;
+    width: 156px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #BAD0F7;
+}
+
+.lightBlueButton:hover {
+    
+}
+
+.lightBlueButton:active {
+    
+}
+
+.whiteButton {
+    display: flex;
+    width: 136px;
+    height: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #42577C;
+    color: #42577C;
+    border-radius: 10px;
+}
+
+.whiteButton:hover {
+    background-color: #2EA2D6;
+    color: white;
+    border: none;
+}
+
+.whiteButton:active {
+    background-color: #42577C;
+}
+
 table thead {
     background-color: #EEF0F4;
 }

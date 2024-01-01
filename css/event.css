@@ -165,5 +165,127 @@
 }
 
 .section_events_info {
-    height: 100vh;
+    height: 210vh;
+}
+
+.container_eventPage_info_programEvent {
+    display: flex;
+    gap: 19px;
+    flex-direction: column;
+    padding-top: 26px;
+    padding-left: 30px;
+    padding-bottom: 55px;
+    padding-right: 16px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container_eventPage_info_programEvent_text p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container_eventPage_info_download {
+    display: flex;
+    gap: 17px;
+    flex-direction: column;
+}
+
+.container_eventPage_info_download a {
+    color: #8A8EA3;
+    border: 1px solid #8A8EA3;
+    padding: 9px 11px;
+    border-radius: 10px;
+}
+
+.container_eventPage_info_download a:hover {
+    background-color: #8A8EA3;
+    color: white;
+    border: none;
+}
+
+.container_eventPage_info_organizers {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.container_eventPage_info_gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_eventPage_info_commentBox {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.container_eventPage_info_commentBox_title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.container_eventPage_info_commentBox_input {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container_eventPage_info_commentBox_input textarea {
+    resize: none;
+    width: 95%;
+}
+
+.sendComment {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container_eventPage_info_commentBox_listComent {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment {
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    padding: 15px 25px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.comment_title {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.comment_text {
+    margin-left: 60px;
+    width: 531px;
+}
+
+.comment_btnList {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 60px;
+    justify-content: space-between;
+}
+
+.comment_btnList_reaction {
+    display: flex;
+    gap: 15px;
+}
+
+.comment_btnList_reaction a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
