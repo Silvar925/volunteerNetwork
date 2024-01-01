@@ -4,12 +4,6 @@
     margin-top: 32px;
 }
 
-.white_container_profile {
-    background-color: white;
-    border-radius: 10px;
-    max-height: 330px;
-}
-
 .container_profile_card {
     display: flex;
     flex-direction: column;

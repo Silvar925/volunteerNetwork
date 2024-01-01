@@ -78,6 +78,15 @@ li {
     list-style: none;
 }
 
+h1 {
+    color: #1E1E1E;
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 
 select {
     border-radius: 10px;
@@ -111,6 +120,7 @@ textarea {
 footer {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     margin-top: 48px;
 }
 
@@ -188,7 +198,7 @@ footer {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .greenButton {
@@ -234,12 +244,135 @@ footer {
 }
 
 .blueButton:hover {
-    background: #2EA2D6; 
+    background: #2EA2D6;
     color: white;
     border: 1px solid #2EA2D6;
 }
 
 .blueButton:active {
     color: #4470BD;
-    border: 1px solid #4470BD; 
+    border: 1px solid #4470BD;
+}
+
+.orangeButton {
+    display: flex;
+    width: 211px;
+    height: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #FF9737;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.orangeButton:hover {
+    background-color: #2EA2D6;
+}
+
+.orangeButton:active {
+    background-color: #98BB87;
+}
+
+table thead {
+    background-color: #EEF0F4;
+}
+
+table thead th {
+    padding: 22px 38px;
+    color: #42577C;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.number {
+    width: 58px;
+}
+
+.fullname {
+    width: 194px;
+}
+
+.events {
+    width: 200px;
+}
+
+table tbody tr td {
+    text-align: center;
+    padding: 26px;
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    border-bottom: 1px solid #42577C;
+}
+
+.card {
+    width: 376px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card_info {
+    padding: 12px 32px;
+}
+
+.card_info a {
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card_info a:hover {
+    color: #4470BD;
+}
+
+.tags {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 32px;
+}
+
+.tags p {
+    background-color: #F2F2F2;
+    padding: 5px;
+    border-radius: 10px;
+
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+}
+
+.white_container_profile {
+    background-color: white;
+    border-radius: 10px;
+    max-height: 330px;
 }

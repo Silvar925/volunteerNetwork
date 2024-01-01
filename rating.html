@@ -20,10 +20,9 @@
 
             <ul>
                 <li><a href="index.html">Новости</a></li>
-                <li><a href="#">Мероприятия</a></li>
-                <li><a href="#">Рейтинг</a></li>
+                <li><a href="events.html">Мероприятия</a></li>
+                <li><a href="rating.html">Рейтинг</a></li>
                 <li><a href="#">О нас</a></li>
-                <li><a href="#">Документы</a></li>
             </ul>
 
             <a href="profile.html"><img src="/images/profile.svg" alt="#" id="btnProfile"></a>
@@ -32,59 +31,104 @@
     </header>
 
     <section class="container_rating">
-        <div class="container_rating_title">
-            <div class="container_rating_title_buttons">
-                <a href="#" class="blueButton">Ранг 1</a>
-                <a href="#" class="blueButton">Ранг 2</a>
-                <a href="#" class="blueButton">Ранг 3</a>
+
+        <div class = "content">
+            <div class="container_rating_title">
+                <div class="container_rating_title_buttons">
+                    <a href="#" class="blueButton">Ранг 1</a>
+                    <a href="#" class="blueButton">Ранг 2</a>
+                    <a href="#" class="blueButton">Ранг 3</a>
+                </div>
+    
+                <div class="container_rating_title_info">
+                    <h2>Условие повышения ранга</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in </p>
+                </div>
+            </div>
+    
+            <div class="container_rating_userRating">
+                <div class="container_rating_userRating_title">
+                    <h1>Рейтинг пользователей</h1>
+                </div>
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="number">№</th>
+                            <th class="fullname">ФИО</th>
+                            <th class="university">ВУЗ</th>
+                            <th class="events">Кол-во мероприятий</th>
+                            <th class="alpha">Альфа</th>
+                            <th class="omega">Омега</th>
+                            <th class="point">Баллы</t>
+                        </tr>
+                    </thead>
+    
+                    <!-- Спросить почему мне пришлость повесить на каждый td один и тот же класс, почему thbody tr td не работа -->
+                    <!-- Почему не работает abosolute -->
+                    <tbody>
+                        <tr>
+                            <td class="number"><img src="/images/top_1.svg" alt="#"></td>
+                            <td class="fullname">Чомаева Мадина Халисовна</td>
+                            <td class="university">СКГА</td>
+                            <td class="events">154</td>
+                            <td class="alpha">100</td>
+                            <td class="omega">54</td>
+                            <td class="point">154</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="number"><img src="/images/top_2.svg" alt="#"></td>
+                            <td class="fullname">Чомаева Мадина Халисовна</td>
+                            <td class="university">СКГА</td>
+                            <td class="events">154</td>
+                            <td class="alpha">100</td>
+                            <td class="omega">54</td>
+                            <td class="point">154</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="number"><img src="/images/top_3.svg" alt="#"></td>
+                            <td class="fullname">Чомаева Мадина Халисовна</td>
+                            <td class="university">СКГА</td>
+                            <td class="events">154</td>
+                            <td class="alpha">100</td>
+                            <td class="omega">54</td>
+                            <td class="point">154</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="number">4</td>
+                            <td class="fullname">Чомаева Мадина Халисовна</td>
+                            <td class="university">СКГА</td>
+                            <td class="events">154</td>
+                            <td class="alpha">100</td>
+                            <td class="omega">54</td>
+                            <td class="point">154</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="number">5</td>
+                            <td class="fullname">Чомаева Мадина Халисовна</td>
+                            <td class="university">СКГА</td>
+                            <td class="events">154</td>
+                            <td class="alpha">100</td>
+                            <td class="omega">54</td>
+                            <td class="point">154</td>
+                        </tr>
+    
+                    </tbody>
+    
+                </table>
+    
+    
             </div>
 
-            <div class="container_rating_title_info">
-                <h2>Условие повышения ранга</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in </p>
-            </div>
         </div>
 
-        <div class="container_rating_userRating">
-            <div class="container_rating_userRating_title">
-                <h1>Рейтинг пользователей</h1>
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th class="number">№</th>
-                        <th class="fullname">ФИО</th>
-                        <th class="university">ВУЗ</th>
-                        <th class="events">Кол-во мероприятий</th>
-                        <th>Альфа</th>
-                        <th>Омега</th>
-                        <th>Баллыы</th>
-                    </tr>
-                </thead>
-
-                <!-- Спросить почему мне пришлость повесить на каждый td один и тот же класс, почему thbody tr td не работал -->
-
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Чомаева Мадина Халисовна</td>
-                        <td>СКГА</td>
-                        <td>154</td>
-                        <td>100</td>
-                        <td>54</td>
-                        <td>154</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-
-        </div>
 
     </section>
 
