@@ -1,3 +1,5 @@
+import { events, speaker } from "./dataBase.js"
+
 const containerEvents = document.getElementById("section_events_grid")
 const sectionEventsInfo = document.getElementById("section_events_info")
 const btnNews = document.getElementById("btnNews")
@@ -12,3 +14,6 @@ btnBack.addEventListener('click', function() {
     containerEvents.classList.remove("hidden")
     sectionEventsInfo.classList.add("hidden")
 })
+
+
+console.log(events)
