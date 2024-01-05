@@ -34,7 +34,7 @@
             </div>
 
             <div class="section_events_filter">
-                <p>246 результатов</p>
+                <p id="countResultEvent">246 результатов</p>
 
                 <div class="section_events_filter_f">
                     <input type="text" placeholder="Поиск по ключевым значеним">
@@ -50,20 +50,7 @@
 
             <div class="container_events">
                 <div class="container_events_cardList" id="container_events_cardList">
-                    <div class="card">
-                        <img src="/images/card.png" alt="#">
-
-                        <div class="card_info">
-                            <a href="#" id="btnNews">Lorem ipsum dolor sit amet, consectetur </a>
-                        </div>
-
-                        <div class="tags">
-                            <p>03.03.2023</p>
-                            <p>Категория</p>
-                            <p>Количество участников</p>
-                        </div>
-                    </div>
-
+                <!-- Сюда добовляется HTML динамический через JS -->
                 </div>
             </div>
 
@@ -74,7 +61,7 @@
                 <div class="white_container_profile eventPage_left">
                     <img src="/images/events.svg" alt="#">
                     <a href="#" class="orangeButton">Подать заявку</a>
-                    <p>Количество участников 43/100</p>
+                    <p id="numberParticipants">Количество участников 43/100</p>
                 </div>
 
                 <div class="container_eventPage">
@@ -87,7 +74,7 @@
                                     fill="black" />
                             </svg>
                         </a>
-                        <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+                        <h1 id="titleNameEvent">Lorem ipsum dolor sit amet, consectetur</h1>
                         <a href="#">
                             <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +86,7 @@
                     </div>
 
                     <div class="container_eventPage_info">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <p id="textEvent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                             eu
@@ -107,8 +94,8 @@
                         </p>
 
                         <div class="events_tags">
-                            <p>12.02.2022 - 12.02.2023</p>
-                            <p>Центр молодежного инновационного творчества г. Черкесск, ул. Кирова 19а</p>
+                            <p id="dateСarryingEvent">12.02.2022 - 12.02.2023</p>
+                            <p id="addressCarryingEvent">Центр молодежного инновационного творчества г. Черкесск, ул. Кирова 19а</p>
                         </div>
 
                         <div class="container_eventPage_info_volunteers">
@@ -116,46 +103,8 @@
                                 <h1>Спикеры</h1>
                             </div>
 
-                            <div class="container_eventPage_info_volunteersGrid">
-                                <div class="container_eventPage_info_volunteersGrid_card">
-                                    <img src="/images/man_2.png" alt="#">
-
-                                    <div class="container_eventPage_info_volunteersGrid_card_info">
-                                        <h3>Иванов Иван</h3>
-                                        <p>Lorem ipsum, dolor sit</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="container_eventPage_info_volunteersGrid_card">
-                                    <img src="/images/man_2.png" alt="#">
-
-                                    <div class="container_eventPage_info_volunteersGrid_card_info">
-                                        <h3>Иванов Иван</h3>
-                                        <p>Lorem ipsum, dolor sit</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="container_eventPage_info_volunteersGrid_card">
-                                    <img src="/images/man_2.png" alt="#">
-
-                                    <div class="container_eventPage_info_volunteersGrid_card_info">
-                                        <h3>Иванов Иван</h3>
-                                        <p>Lorem ipsum, dolor sit</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="container_eventPage_info_volunteersGrid_card">
-                                    <img src="/images/man_2.png" alt="#">
-
-                                    <div class="container_eventPage_info_volunteersGrid_card_info">
-                                        <h3>Иванов Иван</h3>
-                                        <p>Lorem ipsum, dolor sit</p>
-                                    </div>
-
-                                </div>
+                            <div class="container_eventPage_info_volunteersGrid" id="container_eventPage_info_volunteersGrid">
+                                <!-- Тут добовляется информация динамически через JS -->
                             </div>
 
                         </div>
@@ -166,7 +115,7 @@
                             </div>
 
                             <div class="container_eventPage_info_programEvent_text">
-                                <p>
+                                <p id="programEvent">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -204,46 +153,8 @@
                                 <h1>Организаторы</h1>
                             </div>
 
-                            <div class="container_eventPage_info_volunteersGrid">
-                                <div class="container_eventPage_info_volunteersGrid_card">
-                                    <img src="/images/man_2.png" alt="#">
+                            <div class="container_eventPage_info_volunteersGrid" id="gridOrganizers">
 
-                                    <div class="container_eventPage_info_volunteersGrid_card_info">
-                                        <h3>Иванов Иван</h3>
-                                        <p>Lorem ipsum, dolor sit</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="container_eventPage_info_volunteersGrid_card">
-                                    <img src="/images/man_2.png" alt="#">
-
-                                    <div class="container_eventPage_info_volunteersGrid_card_info">
-                                        <h3>Иванов Иван</h3>
-                                        <p>Lorem ipsum, dolor sit</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="container_eventPage_info_volunteersGrid_card">
-                                    <img src="/images/man_2.png" alt="#">
-
-                                    <div class="container_eventPage_info_volunteersGrid_card_info">
-                                        <h3>Иванов Иван</h3>
-                                        <p>Lorem ipsum, dolor sit</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="container_eventPage_info_volunteersGrid_card">
-                                    <img src="/images/man_2.png" alt="#">
-
-                                    <div class="container_eventPage_info_volunteersGrid_card_info">
-                                        <h3>Иванов Иван</h3>
-                                        <p>Lorem ipsum, dolor sit</p>
-                                    </div>
-
-                                </div>
                             </div>
 
                         </div>
